@@ -1,0 +1,408 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+#wrap{
+  width:100%;
+  background:#c6dffe;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+a, span{display:block;}
+
+/* _______________________________________pc view */
+
+header{
+  width:1400px; height:100%;
+  position:relative;
+}
+
+.tBg{
+  width:1400px; height:788px;
+  background:url(../source/backgroud11.png) center center no-repeat;
+  border:none;
+  border-radius:0 0 20px 20px;
+}
+
+.tBanner{
+  width:100%;
+  position:absolute; top:0;
+  display:flex;
+  justify-content:space-between;
+}
+
+.tLogo{
+  margin-top:10px;
+  width:200px; height:100px;
+  /* background:pink; */
+}
+
+.tMenu{
+  width:800px;
+  margin-top:30px;
+  display:flex;
+  justify-content:space-around;
+  font-family: 'Fredoka One', cursive;
+  font-size:40px;
+  font-size:2.500em;
+  color:#105762;
+}
+.tMenu>a{transition:all 0.3s;}
+.tMenu>a:hover{
+  color:#c6dffe;
+  transition:all 0.3s;
+}
+
+.tImg{
+  width:500px; height:500px;
+  position:absolute;
+  right:8%; bottom:0;
+  background:url(../source/tImg1.png) center center no-repeat;
+}
+
+
+section{
+  width:1400px; height:auto;
+  background:#ffeadb;
+  border:none;
+  border-radius:20px;
+  margin-top:90px;
+  position:relative;
+  padding-bottom:30px;
+}
+section>img{
+  position:absolute;
+  top:-11%; left:7%;
+  z-index:10;
+}
+.intro{
+  width:1400px;
+  padding:30px; margin-right:50px;
+  font-size:30px;
+  font-size:1.875em;
+  font-family: 'Fredoka One', cursive;
+  text-align:right;
+  color:#555;
+  line-height:50px;
+}
+.intro>span{
+  display:inline;
+  color:#e2447e;
+}
+
+/* section1___________________________________________________________ */
+
+.section1{
+  width:100%; height:100%;
+  padding-top:50px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.section1 .box{
+  width:1200px; height:500px;
+  border:none;
+  border-radius:20px;
+  margin:10px;
+}
+
+.box1{
+  background:#ff9a76;
+  display:flex;
+  align-items:center; 
+  position:relative;
+}
+
+.mIcon{
+  position:absolute;
+  left:6%;
+  width:300px; height:300px;
+  border:none;
+  border-radius:50%;
+  background:#c6dffe;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.box1>p{
+  display:inline-block;
+  width:700px; height:250px;
+  position:absolute;
+  right:4%; top:20%;
+  font-family: 'Ubuntu', sans-serif;
+  font-size:30px;
+  font-size:1.875em;
+  color:#555;
+}
+.box1>p>span{
+  font-family: 'Fredoka One', cursive;
+  color:#333;
+  font-size:30px;
+  font-size:1.875em;
+}
+
+.mIcon>img{
+  width:300px; height:300px;
+}
+
+.box2{
+  background:#679b9b;
+  display:flex;
+  align-items:center; 
+  position:relative;
+}
+.mIcon2{
+  position:absolute;
+  right:6%;
+  width:300px; height:300px;
+  border:none;
+  border-radius:50%;
+  background:#c6dffe;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.box2>p{
+  display:inline-block;
+  width:700px; height:250px;
+  position:absolute;
+  left:5%; top:20%;
+  font-family: 'Ubuntu', sans-serif;
+  font-size:30px;
+  font-size:1.875em;
+  color:#555;
+}
+.box2>p>span{
+  font-family: 'Fredoka One', cursive;
+  color:#333;
+  font-size:30px;
+  font-size:1.875em;
+}
+
+
+.box3{
+  background:#ff9a76;
+  display:flex;
+  align-items:center; 
+  position:relative;
+}
+.mIcon3{
+  position:absolute;
+  left:6%;
+  width:300px; height:300px;
+  border:none;
+  border-radius:50%;
+  background:#c6dffe;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.mIcon3>img{
+  width:300px; height:300px;
+  position:absolute;
+  top:3%;
+}
+.box3>p{
+  display:inline-block;
+  width:700px; height:250px;
+  position:absolute;
+  right:4%; top:13%;
+  font-family: 'Ubuntu', sans-serif;
+  font-size:30px;
+  font-size:1.875em;
+  color:#555;
+}
+.box3>p>span{
+  font-family: 'Fredoka One', cursive;
+  color:#333;
+  font-size:30px;
+  font-size:1.875em;
+}
+
+/* section2________________________________________________________________ */
+
+
+.section2{
+  width:1400px; height:auto;
+  margin-top:50px;
+  position:relative;
+  border:none;
+  border-radius:20px;
+  background:#679b9b;
+}
+.section2>p{
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  font-size:60px;
+  font-size:3.750em;
+  margin-top:30px;
+  color:#333;
+}
+
+#gallery{ 
+	width:1200px; height:1000px;
+	margin:30px auto; 
+	padding:20px; 
+	border:solid 1px #ccc;
+  border-radius:20px;
+	background:#eee;
+	position:relative;
+}
+#largeImg{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+#largeImg img{ /*모든 이미지 동일한 위치에 겹친후 안보이게 함*/
+	display:none;
+	position:absolute;
+	top:5%;
+	left:8%;
+  border-radius: 20px;
+}
+#largeImg img:first-child{display:inline;}/*첫번째 이미지는 보이게함*/
+
+.thumbs{
+  width:1200px;
+  position:absolute;
+  display:flex;
+  justify-content: space-around;
+  bottom:3%;
+
+}
+.thumbs img{
+	border:solid 1px #ccc;
+  border-radius: 20px;
+	padding:5px;
+	margin:10px 0;
+	width:90px;
+	height:80px;
+}
+.thumbs img:hover{border-color:#ef4018;}
+
+/* section3________________________________________________________________ */
+
+.section3{
+  width:1400px; height:auto;
+  background: #ff9a76;
+  border-radius:20px;
+  margin-top:50px;
+  margin-bottom:50px;
+  position:relative;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section3>p{
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  font-size:60px;
+  font-size:3.750em;
+  margin-top:30px;
+  color:#333;
+}
+#board{
+  width:1200px; height:500px;
+  background:#eee;
+  border-radius:20px;
+  margin: 30px 0;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  position:relative;
+}
+.lft, .cen, .rgt{
+  width:365px; height:450px;
+  border-radius: 20px;
+}
+
+.lft{
+  background: #b9bda7;
+}
+.cen{
+  background: #679b9b;
+}
+.rgt{
+  background: #ff9a76;
+}
+.head{
+  width:365px; height:30px;
+  background:#ccc;
+  border-radius:20px;
+  margin-top:10px;
+  text-align:center;
+  font-family: 'Fredoka One', cursive;
+  font-size:1.5rem;
+}
+
+.list1{
+  width:365px; height:340px;
+  margin-top:20px;
+  background:#cbcebc;
+  overflow:hidden;
+}
+.list li{
+  width:365px; height:33px;
+  border-bottom: 1px solid #999;
+  text-align:left;
+  line-height:33px;
+  padding-left:10px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.list2{
+  width:365px; height:340px;
+  margin-top:20px;
+  background:#83b4b4;
+  overflow:hidden;
+}
+.list3{
+  width:365px; height:340px;
+  margin-top:20px;
+  background:#fdac8f;
+  overflow:hidden;
+}
+.list1 li:hover{
+  background: #b9bda7;
+  cursor:pointer;
+}
+.list2 li:hover{
+  background: #679b9b;
+  cursor:pointer;
+}
+.list3 li:hover{
+  background: #ff9a76;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+
+/* footer________________________________________________________________ */
+footer{
+  width:100%; height:50px;
+  border-top: 1px solid #999;
+  color:#555;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background:#c6dffe;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* _______________________________________tablet view */
+
+
+
+
+/* _______________________________________mobile view */
