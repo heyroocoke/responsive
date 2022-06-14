@@ -19,10 +19,17 @@ header{
   position:relative;
 }
 
-.tBg{
-  width:1400px; height:788px;
-  background:url(../source/backgroud11.png) center center no-repeat;
-  border:none;
+.visual{
+  width:100%; max-width:100%;
+}
+/* pc에서는 1번째 이미지만 보이게 함 */
+.visual li:nth-child(2),
+.visual li:nth-child(3) {display:none;}
+.visual li:nth-child(1) {display:block;}
+
+.visual li img{ /* 가변이미지 */
+  width:100%;
+  max-width:100%;
   border-radius:0 0 20px 20px;
 }
 
@@ -59,9 +66,14 @@ header{
   width:500px; height:500px;
   position:absolute;
   right:8%; bottom:0;
-  background:url(../source/tImg1.png) center center no-repeat;
 }
+.tImg li:nth-child(2),
+.tImg li:nth-child(3) {display:none;}
+.tImg li:nth-child(1) {display:block;}
 
+.tImg li img{
+  width:100%; max-width:100%;
+}
 
 section{
   width:1400px; height:auto;
@@ -367,10 +379,12 @@ section>img{
 .list1 li:hover{
   background: #b9bda7;
   cursor:pointer;
+  font-weight:bold;
 }
 .list2 li:hover{
   background: #679b9b;
   cursor:pointer;
+  font-weight:bold;
 }
 .list3 li:hover{
   background: #ff9a76;
@@ -379,7 +393,7 @@ section>img{
 }
 
 
-/* footer________________________________________________________________ */
+/* footer_______________________ */
 footer{
   width:100%; height:50px;
   border-top: 1px solid #999;
@@ -400,9 +414,68 @@ footer{
 
 
 
-/* _______________________________________tablet view */
+/* _______________________________________________________tablet view */
+@media screen and (min-width:768px) and (max-width:1399px){
 
+  header{
+    width:100%;
+    max-width:100%;
+    flex-flow:column wrap;
+    overflow:hidden;
+  }
+  .tBanner{
+    flex-direction: column;
+    align-items: center;
+  }
+  .tLogo{
+    margin-right:80px;
+  }
+  .tMenu{
+    width:100%;
+    background:rgba(255,255,255,0.5);
+  }
+  .visual{
+    width:100%; max-width:100%;
+  }
+  .visual li:nth-child(1),
+  .visual li:nth-child(3) {display:none;}
+  .visual li:nth-child(2) {display:block;}
+
+
+  .tImg{
+    width:500px; height:500px;
+    left:3%; top:50%;
+  }
+  .tImg li:nth-child(1),
+  .tImg li:nth-child(3) {display:none;}
+  .tImg li:nth-child(2) {display:block;}
+
+
+
+
+
+
+
+
+}
 
 
 
 /* _______________________________________mobile view */
+
+@media screen and (max-width:767px){
+
+
+
+
+
+  .visual{
+    width:100%; max-width:100%;
+  }
+  .visual li:nth-child(1),
+  .visual li:nth-child(2) {display:none;}
+  .visual li:nth-child(3) {display:block;}
+
+
+
+}
