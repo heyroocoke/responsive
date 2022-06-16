@@ -466,7 +466,6 @@ footer{
   }
 
 /* section1___________________________________________________________ */
-
   .section1 .box{
     width:85%; max-width:85%;
     flex-direction:flex;
@@ -553,7 +552,9 @@ footer{
 /* _______________________________________mobile view */
 
 @media screen and (max-width:767px){
+
   #moheader{display:block;}
+
   #moheader .mo_top{
     position:fixed;
     top:0; right:0;
@@ -668,8 +669,8 @@ footer{
     display:block;
     font-family: 'Fredoka One', cursive;
     color:#333;
-    font-size:50px;
-    font-size:3.125em;
+    font-size:30px;
+    font-size:1.875em;
     margin-top:360px;
   }
   .tmview_btn{
@@ -690,12 +691,22 @@ footer{
   }
   #gallery{
     width:90%; max-width:90%;
+    overflow: scroll;
+  }
+  #largeImg{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
   }
   #largeImg img{
+    position:relative;
+    margin-top:30px;
+    display:block;
     width:90%; max-width:90%;
   }
+
   .thumbs{
-    width:95%; max-width:95%;
+    display:none;
   }
 
 /* section3___________________________________________________________ */
